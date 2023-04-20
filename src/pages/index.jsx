@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import React from 'react';
 import { CallToAction } from '@/components/CallToAction'
 import { Faqs } from '@/components/Faqs'
 import { Footer } from '@/components/Footer'

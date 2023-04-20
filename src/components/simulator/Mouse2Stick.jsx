@@ -1,19 +1,15 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
-interface JoystickData {
-  x: number;
-  y: number;
-}
-
-const MouseJoystick: React.FC = () => {
-  const [joystick, setJoystick] = useState<JoystickData>({ x: 0, y: 0 });
+const Mouse2Stick = () => {
+  const [joystick, setJoystick] = useState({ x: 0, y: 0 });
   const sensitivity = 0.001;
   const smoothingFactor = 0.1;
 
   useEffect(() => {
-    let movementTimer: ReturnType<typeof setTimeout>;
+    let movementTimer;
 
-    const onMouseMove = (event: MouseEvent) => {
+    const onMouseMove = (event) => {
       const deltaX = event.movementX;
       const deltaY = event.movementY;
 
@@ -48,4 +44,11 @@ const MouseJoystick: React.FC = () => {
   );
 };
 
-export default MouseJoystick;
+Mouse2Stick.propTypes = {
+  joystick: PropTypes.shape({
+    x: PropTypes.number,
+    y: PropTypes.number,
+  }),
+};
+
+export default Mouse2Stick;
