@@ -62,8 +62,8 @@ function engineInit(appInit, appUpdate, appUpdatePost, appRender, appRenderPost)
 
         // setup html
         document.body.appendChild(mainCanvas = document.createElement('canvas'));
-        document.body.style = 'margin:0;overflow:hidden;background:#000';
-        mainCanvas.style = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);image-rendering:crisp-edges;image-rendering:pixelated';          // pixelated rendering
+        document.body.style = 'margin:0;overflow:hidden';
+        mainCanvas.style = 'position:absolute;top:50%;left:50%;width: 500px;height:200px;transform:translate(-50%,-50%);image-rendering:crisp-edges;image-rendering:pixelated';          // pixelated rendering
         mainContext = mainCanvas.getContext('2d');
 
         debugInit();
