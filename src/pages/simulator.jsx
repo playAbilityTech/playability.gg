@@ -5,6 +5,7 @@ import { Header } from '@/components/Header'
 import FaceExpressionDetector from '@/components/simulator/FaceExpressionDetector'
 import Mouse2Stick from '@/components/simulator/Mouse2Stick'
 import Voice from '@/components/simulator/Voice'
+import Game from '@/components/simulator/game'
 
 
 
@@ -35,7 +36,7 @@ export default function Home() {
             <Voice />
             </div>
             <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">
-
+            <Game />
             </div>
         </div>
         </div>
