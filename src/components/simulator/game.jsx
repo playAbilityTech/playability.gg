@@ -4,21 +4,12 @@ import React, { useEffect } from 'react';
 const Game = () => {
   useEffect(() => {
     const scriptFiles = [
-      'spacehugger/engine/engineUtil.js',
-      'spacehugger/engine/engineDebug.js',
-      'spacehugger/engine/engine.js',
-      'spacehugger/engine/engineObject.js',
-      'spacehugger/engine/engineWebGL.js',
-      'spacehugger/engine/engineDraw.js',
-      'spacehugger/engine/engineInput.js',
-      'spacehugger/engine/engineAudio.js',
-      'spacehugger/engine/engineTileLayer.js',
-      'spacehugger/engine/engineParticle.js',
-      'spacehugger/appObjects.js',
-      'spacehugger/appCharacters.js',
-      'spacehugger/appEffects.js',
-      'spacehugger/appLevel.js',
-      'spacehugger/app.js',
+      'spacehugger/engine.all.js',
+      'spacehugger/gameObjects.js',
+      'spacehugger/gameEffects.js',
+      'spacehugger/gameLevel.js',
+      'spacehugger/gamePlayer.js',
+      'spacehugger/game.js',
     ];
 
     const loadScripts = () => {
