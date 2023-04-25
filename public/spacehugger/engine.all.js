@@ -2067,7 +2067,7 @@ const setKeyState = (key, state, device = 0) => {
   };
   
   const emulateKeyPress = (key, device = 0) => {
-    setKeyState(key, 2, device); // 1 (down) | 2 (pressed)
+    setKeyState(key, 1, device); // 1 (down) | 2 (pressed)
     console.log('emulateKeyPress', key, device);
 };
   
