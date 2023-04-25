@@ -57,11 +57,11 @@ const FaceExpressionDetector = () => {
       const shouldPressKey = happyScore > 0.95;
       if (shouldPressKey) {
         gameStore.setKeyState(90, true); // X
-        // console.log(`key 90 pressed`);
+        console.log(`key 90 pressed`);
   
         setTimeout(() => {
           gameStore.setKeyState(90, false); // X
-          // console.log(`key 90 released`);
+          console.log(`key 90 released`);
         }, 200);
       }
     });
