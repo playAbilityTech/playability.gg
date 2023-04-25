@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import * as faceapi from 'face-api.js';
 import { Point } from 'face-api.js';
+import gameStore from '@/stores/gameStore';
 
 const FaceExpressionDetector = () => {
   const videoRef = useRef(null);
@@ -37,7 +38,7 @@ const FaceExpressionDetector = () => {
     if (!videoRef.current) {
       return;
     }
-
+  
     const detections = await faceapi
       .detectAllFaces(
         videoRef.current,
@@ -45,25 +46,31 @@ const FaceExpressionDetector = () => {
       )
       .withFaceLandmarks()
       .withFaceExpressions();
-
+  
     detections.forEach((detection, index) => {
       const { expressions, landmarks } = detection;
       const happyScore = expressions.happy;
       const surprisedScore = expressions.surprised;
-
+  
       const { yaw, pitch, roll } = calculateYawPitchRoll(landmarks.positions);
-
-      console.log(`Face #${index + 1}`);
-      console.log("Happy:", happyScore);
-      console.log("Surprised:", surprisedScore);
-      console.log("Yaw:", yaw);
-      console.log("Pitch:", pitch);
-      console.log("Roll:", roll);
+  
+      const shouldPressKey = happyScore > 0.95;
+      if (shouldPressKey) {
+        gameStore.setKeyState(90, true); // X
+        // console.log(`key 90 pressed`);
+  
+        setTimeout(() => {
+          gameStore.setKeyState(90, false); // X
+          // console.log(`key 90 released`);
+        }, 200);
+      }
     });
-
+  
     // Continuously call faceDetection
     requestAnimationFrame(faceDetection);
   };
+  
+  
 
   const calculateYawPitchRoll = (landmarks) => {
     const nose = landmarks[30];

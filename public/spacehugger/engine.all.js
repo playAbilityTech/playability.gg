@@ -974,7 +974,7 @@ class Timer
  *  @type {Vector2} 
  *  @default
  *  @memberof Settings */
-let canvasMaxSize = vec2(1920, 1200);
+let canvasMaxSize = vec2(300, 640);
 
 /** Fixed size of the canvas, if enabled canvas size never changes
  * - you may also need to set mainCanvasSize if using screen space coords in startup
@@ -2082,8 +2082,8 @@ window.emulateKeyRelease = emulateKeyRelease;
 
 function inputUpdate()
 {
-    // clear input when lost focus (prevent stuck keys)
-    isTouchDevice || document.hasFocus() || clearInput();
+    // // clear input when lost focus (prevent stuck keys)
+    // isTouchDevice || document.hasFocus() || clearInput();
 
     // update mouse world space position
     mousePos = screenToWorld(mousePosScreen);
@@ -4280,7 +4280,7 @@ let frameTimeLastMS = 0, frameTimeBufferMS = 0, tileImageSize, tileImageFixBleed
 let averageFPS, drawCount;
 
 // css text used for elements created by engine
-const styleBody = 'margin:0;overflow:hidden;background:#000' +
+const styleBody = 'margin:0;overflow:hidden;' +
     ';touch-action:none;user-select:none;-webkit-user-select:none;-moz-user-select:none';
 const styleCanvas = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)';
 

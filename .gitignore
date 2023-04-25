@@ -30,3 +30,5 @@ yarn-error.log*
 
 # vercel
 .vercel
+public/spacehugger/engine.all.js
+package-lock.json
