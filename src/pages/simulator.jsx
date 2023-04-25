@@ -5,7 +5,8 @@ import { Header } from '@/components/Header'
 import FaceExpressionDetector from '@/components/simulator/FaceExpressionDetector'
 import Mouse2Stick from '@/components/simulator/Mouse2Stick'
 import Voice from '@/components/simulator/Voice'
-import Game from '@/components/simulator/game'
+import ParentComponent from '@/components/simulator/ParentComponent'
+// import Game from '@/components/simulator/game'
 
 
 
@@ -28,15 +29,16 @@ export default function Home() {
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
             <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">
             <FaceExpressionDetector />
+          
             </div>
             <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">
             <Mouse2Stick />
             </div>
             <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">
             <Voice />
-            </div>
+            </div> 
             <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center">
-            <Game />
+            <ParentComponent />
             </div>
         </div>
         </div>

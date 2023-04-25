@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 
-
-const Game = () => {
+const Game = ({ onGameLoad }) => {
   useEffect(() => {
     const scriptFiles = [
       'spacehugger/engine.all.js',
@@ -17,13 +16,22 @@ const Game = () => {
         const script = document.createElement('script');
         script.src = src;
         script.async = false; // Pour conserver l'ordre de chargement des scripts
+        script.onload = () => {
+          if (src === 'spacehugger/game.js') {
+            // The game script has been loaded, call the callback if provided
+            if (typeof onGameLoad === 'function') {
+              onGameLoad();
+            }
+          }
+        };
         document.body.appendChild(script);
       });
     };
 
     loadScripts();
 
-    // Supprime les scripts lors du démontage du composant
+
+    // Remove the scripts when the component is unmounted
     return () => {
       document.querySelectorAll('script[src^="/spacehugger/engine/"], script[src^="/spacehugger/app"]').forEach((script) => {
         script.remove();
@@ -40,11 +48,9 @@ const Game = () => {
 
   return (
     <div style={gameContainerStyle}>
-      {/* Ajoutez ici les éléments HTML spécifiques à votre jeu si nécessaire */}
+      {/* Add any specific HTML elements for your game if necessary */}
     </div>
   );
 };
-
-
 
 export default Game;
