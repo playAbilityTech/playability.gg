@@ -11,9 +11,9 @@ export function Footer() {
         <div className="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between">
           <div className="flex gap-x-6">
             <Link
-              href="https://twitter.com"
+              href="https://twitter.com/squirelo"
               className="group"
-              aria-label="TaxPal on Twitter"
+              aria-label="Valentin Squirelo sur Twitter"
             >
               <svg
                 aria-hidden="true"
@@ -23,9 +23,9 @@ export function Footer() {
               </svg>
             </Link>
             <Link
-              href="https://github.com"
+              href="https://github.com/playabilitytech"
               className="group"
-              aria-label="TaxPal on GitHub"
+              aria-label="playAbility sur GitHub"
             >
               <svg
                 aria-hidden="true"
