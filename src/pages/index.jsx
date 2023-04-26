@@ -11,6 +11,7 @@ import Hero3 from '@/components/Hero3';
 
 
 
+
 export default function Home() {
   return (
     <>
@@ -24,9 +25,10 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        {/* <Hero3 />
+        {/* <Hero3 /> */}
         <CTA />
-        <Faqs /> */}
+        {/* <Faqs /> */}
+
       </main>
       <Footer />
     </>
