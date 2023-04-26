@@ -1,6 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Game = ({ onGameLoad }) => {
+  const emulateKeyPressRef = useRef(null);
+  const emulateKeyReleaseRef = useRef(null);
+
   useEffect(() => {
     const scriptFiles = [
       'spacehugger/engine.all.js',
@@ -15,12 +18,16 @@ const Game = ({ onGameLoad }) => {
       scriptFiles.forEach((src) => {
         const script = document.createElement('script');
         script.src = src;
-        script.async = false; // Pour conserver l'ordre de chargement des scripts
+        script.async = false; // To preserve the loading order of the scripts
         script.onload = () => {
           if (src === 'spacehugger/game.js') {
-            // The game script has been loaded, call the callback if provided
+            // The game script has been loaded, initialize the refs with the actual functions
+            emulateKeyPressRef.current = window.emulateKeyPress;
+            emulateKeyReleaseRef.current = window.emulateKeyRelease;
+
+            // Call the onGameLoad callback with the function refs
             if (typeof onGameLoad === 'function') {
-              onGameLoad();
+              onGameLoad(emulateKeyPressRef, emulateKeyReleaseRef);
             }
           }
         };
@@ -30,14 +37,13 @@ const Game = ({ onGameLoad }) => {
 
     loadScripts();
 
-
     // Remove the scripts when the component is unmounted
     return () => {
       document.querySelectorAll('script[src^="/spacehugger/engine/"], script[src^="/spacehugger/app"]').forEach((script) => {
-        script.remove();
-      });
+          script.remove();
+        });
     };
-  }, []);
+  }, [onGameLoad]);
 
   const gameContainerStyle = {
     width: '100%',
