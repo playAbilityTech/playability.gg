@@ -6,13 +6,9 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero }  from '@/components/Hero'
 import CTA from '@/components/CTA';
-import Hero2 from '@/components/Hero2';
 import Hero3 from '@/components/Hero3';
-import Testimonials from '@/components/Testimonials'
-import PlayAbilityFeatures from '@/components/PlayAbilityFeatures'
 
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { SecondaryFeatures } from '@/components/SecondaryFeatures'
+
 
 
 export default function Home() {
