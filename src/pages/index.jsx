@@ -7,6 +7,7 @@ import { Header } from '@/components/Header'
 import { Hero }  from '@/components/Hero'
 import CTA from '@/components/CTA';
 import Hero3 from '@/components/Hero3';
+import Form from '@/components/Form';
 
 
 
@@ -26,6 +27,7 @@ export default function Home() {
         <Hero />
         <Hero3 />
         <CTA />
+        <Form />
         <Faqs />
       </main>
       <Footer />
