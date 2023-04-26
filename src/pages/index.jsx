@@ -25,10 +25,9 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <Hero3 />
+        {/* <Hero3 /> */}
         <CTA />
-        <Form />
-        <Faqs />
+        {/* <Faqs /> */}
       </main>
       <Footer />
     </>
