@@ -15,18 +15,18 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>playAbility - Make gaming accessible to everyone</title>
+        <title>playAbility - Rendre le jeu video accessible à tout le monde</title>
         <meta
           name="description"
-          content="Make gaming accessible to everyone"
+          content="Une clé usb bluetooth qui permet de jouer à Mario Kart avec son fauteuil roulant et sa voix."
         />
       </Head>
       <Header />
       <main>
         <Hero />
-        <Hero3 />
+        {/* <Hero3 />
         <CTA />
-        <Faqs />
+        <Faqs /> */}
       </main>
       <Footer />
     </>
