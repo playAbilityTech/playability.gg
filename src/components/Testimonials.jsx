@@ -3,6 +3,8 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 
 export default function Testimonials() {
+
+        return (
    
    <div className="relative z-10 mt-32 bg-gray-900 pb-20 sm:mt-56 sm:pb-24 xl:pb-0">
    <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
@@ -56,4 +58,4 @@ export default function Testimonials() {
    </div>
  </div>
 
-        }
+    )    }

@@ -4,8 +4,12 @@ import { CallToAction } from '@/components/CallToAction'
 import { Faqs } from '@/components/Faqs'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
-import Hero2  from '@/components/Hero2'
+import { Hero }  from '@/components/Hero'
+import CTA from '@/components/CTA';
+import Hero2 from '@/components/Hero2';
+import Hero3 from '@/components/Hero3';
 import Testimonials from '@/components/Testimonials'
+import PlayAbilityFeatures from '@/components/PlayAbilityFeatures'
 
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
@@ -23,9 +27,9 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <Hero2 />
-        <Testimonials />
-        <CallToAction />
+        <Hero />
+        <Hero3 />
+        <CTA />
         <Faqs />
       </main>
       <Footer />
