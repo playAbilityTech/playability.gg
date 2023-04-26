@@ -2,9 +2,10 @@ import { makeAutoObservable } from 'mobx';
 
 class GameStore {
   keyStates = {
-    87: false, // W
-    83: false, // S
-    65: false, // A
+    38: false, // Up arrow
+    40: false, // Down arrow
+    37: false, // Left arrow
+    39: false, // Right arrow
     67: false, // C
     88: false, // X
     90: false, // Z

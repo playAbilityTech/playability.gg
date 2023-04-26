@@ -53,17 +53,17 @@ const FaceExpressionDetector = () => {
       const surprisedScore = expressions.surprised;
   
       const { yaw, pitch, roll } = calculateYawPitchRoll(landmarks.positions);
-  
+      console.log('happyScore', happyScore);
       const shouldPressKey = happyScore > 0.95;
+
       if (shouldPressKey) {
-        gameStore.setKeyState(90, true); // X
-        console.log(`key 90 pressed`);
-  
-        setTimeout(() => {
-          gameStore.setKeyState(90, false); // X
-          console.log(`key 90 released`);
-        }, 200);
-      }
+        gameStore.setKeyState(37, true); // X
+        console.log(`key 37 pressed`);
+      
+        // gameStore.setKeyState(37, false); // X
+        // console.log(`key 37 released`);
+    }
+    
     });
   
     // Continuously call faceDetection
