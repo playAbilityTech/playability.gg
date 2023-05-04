@@ -1,31 +1,29 @@
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, PuzzlePieceIcon, CursorArrowRaysIcon, WifiIcon, UserIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 const features = [
   {
-    name: 'Push to deploy.',
+    name: 'Facile à utiliser',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: CloudArrowUpIcon,
+      'Une clé usb bluetooth vendue moins de 50 euros et une app gratuite pour facilement jouer sur console et pc',
+    icon: WifiIcon,
   },
   {
-    name: 'SSL certificates.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-    icon: LockClosedIcon,
+    name: 'Jouer à Mario Kart avec son fauteuil roulant',
+    description:
+      'Tu controles déjà ton téléphone avec ton fauteuil ? Pas besoin de racheter un nouveau joystick !',
+    icon: CursorArrowRaysIcon,
   },
   {
-    name: 'Database backups.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ServerIcon,
+    name: 'Joue avec ta voix et ton visage',
+    description:
+      'Controle tes jeux favoris grace à la reconnaisssance faciale et vocale. Enregistre tes propres sons / mots et contractions musculaires pour personnaliser ton expérience de jeu',
+    icon: UserIcon,
   },
   {
-    name: 'Database backups.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ServerIcon,
-  },
-  {
-    name: 'Database backups.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ServerIcon,
+    name: 'Utilise ton matériel existant',
+    description:
+      'Compatible avec le Xbox Adaptive Controller, le Hori Flex Controller, le Microsoft Adaptive Hub, et périphériques Bluetooth (gamepad, clavier, souris, etc)',
+    icon: PuzzlePieceIcon,
   },
 ]
 
@@ -57,7 +55,7 @@ export default function Hero3() {
                     <div className="relative">
                     <Image
                     className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                    src="https://res-console.cloudinary.com/hed2t4hrt/thumbnails/transform/v1/image/upload//v1683212713/cGxheWFiaWxpdHkvSU1HXzkxOTlfYmw4Z2h3/drilldown"
                     alt=""
                     width={396}
                     height={528}
@@ -70,7 +68,7 @@ export default function Hero3() {
                     <div className="relative">
                     <Image
   className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-  src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+  src="https://res.cloudinary.com/hed2t4hrt/image/upload/v1683212250/playability/playability_usb_dongle_1_mqkn7k.jpg"
   alt=""
   width={396}
   height={528}
@@ -81,7 +79,7 @@ export default function Hero3() {
                     <div className="relative">
                     <Image
   className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-  src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
+  src="https://res.cloudinary.com/hed2t4hrt/image/upload/c_scale,w_1102/v1683212305/playability/Matthieu_en_train_de_controler_son_joueur_dans_le_jeu_FIFA_grace_%C3%A0_son_joystick_de_fauteuil_roulant_uyr6i6.png"
   alt=""
   width={396}
   height={528}
