@@ -5,7 +5,7 @@ export default function Youtube() {
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
             <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
               <h2 className="mt-6 text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Ma nouvelle invention m'a mené jusqu'au Concours Lépine !
+                Ma nouvelle invention m&apos;a mené jusqu'au Concours Lépine !
               </h2>
               <p className="mt-6 text-base leading-7 text-gray-600">
                 Je vous raconte comment tout a commencé dans ma dernière vidéo Youtube. C'était il y a 3 mois. Merci ChatGPT.
