@@ -28,7 +28,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero2 />
-        {/* <Youtube /> */}
+        <Youtube />
         {/* <Hero3 /> */}
         <CTA />
         {/* <Faqs /> */}

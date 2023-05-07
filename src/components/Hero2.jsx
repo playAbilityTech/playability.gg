@@ -22,7 +22,7 @@ const features = [
   {
     name: 'Compatible PC et consoles',
     description:
-      'Connexion direct sur PC/MAC et Nintendo Switch. Compatible Xbox avec le Xbox Adaptive Controller. PS4/PS5 en Remote Play',
+      'Connection direct sur PC/MAC et Nintendo Switch. Compatible Xbox avec le Xbox Adaptive Controller. PS4/PS5 en Remote Play',
     icon: PuzzlePieceIcon,
   },
 ]
