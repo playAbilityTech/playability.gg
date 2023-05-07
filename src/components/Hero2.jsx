@@ -2,15 +2,9 @@ import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, PuzzlePieceIcon, Curs
 
 const features = [
   {
-    name: 'Facile à utiliser',
+    name: 'Joue avec ton fauteuil roulant ',
     description:
-      'Une clé usb bluetooth vendue moins de 50 euros et une app gratuite pour facilement jouer sur console et pc',
-    icon: WifiIcon,
-  },
-  {
-    name: 'Jouer à Mario Kart avec son fauteuil roulant',
-    description:
-      'Tu controles déjà ton téléphone avec ton fauteuil ? Pas besoin de racheter un nouveau joystick !',
+      'Tu controles déjà ton téléphone avec ton fauteuil ? Pas besoin de racheter un nouveau joystick ! Poursuite oculaires et autres periphériques de controles sont compatibles !',
     icon: CursorArrowRaysIcon,
   },
   {
@@ -20,9 +14,15 @@ const features = [
     icon: UserIcon,
   },
   {
-    name: 'Utilise ton matériel existant',
+    name: 'Facile à utiliser et pas cher',
     description:
-      'Compatible avec le Xbox Adaptive Controller, le Hori Flex Controller, le Microsoft Adaptive Hub, et périphériques Bluetooth (gamepad, clavier, souris, etc)',
+      'Branche simplement la clé usb bluetooth (vendue moins de 50 euros) et télécharge une app gratuite pour Android et iOS',
+    icon: WifiIcon,
+  },
+  {
+    name: 'Compatible PC et consoles',
+    description:
+      'Connexion direct sur PC/MAC et Nintendo Switch. Compatible Xbox avec le Xbox Adaptive Controller. PS4/PS5 en Remote Play',
     icon: PuzzlePieceIcon,
   },
 ]
@@ -49,7 +49,7 @@ export default function Hero2() {
         <div className="mx-auto max-w-2xl lg:text-center">
         
           <p className="mt-6 text-lg leading-8 text-gray-600">
-          Une solution simple et abordable pour facilement jouer en utilisant votre matériel existant et l intelligence artificielle
+          Une solution simple et abordable pour permetttre à toutes les personnes en situation de handicap de jouer avec leurs capacités
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
