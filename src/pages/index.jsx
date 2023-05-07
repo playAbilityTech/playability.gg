@@ -9,7 +9,7 @@ import CTA from '@/components/CTA';
 import Hero3 from '@/components/Hero3';
 import Hero2 from '@/components/Hero2';
 import Banner from '@/components/banner';
-
+import Youtube from '@/components/Youtube';
 
 
 
@@ -28,6 +28,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero2 />
+        {/* <Youtube /> */}
         {/* <Hero3 /> */}
         <CTA />
         {/* <Faqs /> */}
