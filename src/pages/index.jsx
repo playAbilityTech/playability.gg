@@ -29,7 +29,7 @@ export default function Home() {
       <main>
         <Hero2 />
         <Youtube />
-        {/* <Hero3 /> */}
+        <Hero3 />
         <CTA />
         {/* <Faqs /> */}
 
