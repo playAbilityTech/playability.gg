@@ -10,6 +10,7 @@ import Hero3 from '@/components/Hero3';
 import Hero2 from '@/components/Hero2';
 import Banner from '@/components/banner';
 import Youtube from '@/components/Youtube';
+import Newsletter from '@/components/Newsletter';
 
 
 
@@ -27,11 +28,14 @@ export default function Home() {
       </Head>
       <Header />
       <main>
+
         <Hero2 />
         <Youtube />
-        {/* <Hero3 /> */}
         <CTA />
-        {/* <Faqs /> */}
+        <Hero />
+        <Hero3 />
+        <Newsletter />
+        <Faqs />
 
       </main>
       <Footer />
